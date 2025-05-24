@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Added a light background for the page */
+}
+
+.container { /* This can be used to center the chat on the page */
+    max-width: 800px;
+    margin: 20px auto; /* Added top/bottom margin */
+    padding: 20px;
+    background-color: #fff; /* Added background to container */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Added subtle shadow */
+    border-radius: 8px;
+}
+
+h1 { /* Style for the main heading */
+    text-align: center;
+    color: #333;
+}
+
+#conversation {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 400px; /* Fixed height */
+    overflow-y: auto; /* Scroll for overflow */
+    border: 1px solid #ccc;
+    background-color: #fff; /* White background for chat area */
+    margin-bottom: 20px; /* Space before any potential input area */
+    border-radius: 5px;
+}
+
+.chat {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px; /* Slightly more rounded */
+    border: 1px solid #ddd;
+    max-width: 70%;
+    word-wrap: break-word;
+    line-height: 1.4; /* Improved readability */
+}
+
+/* Default style for any hero - can be a light gray or similar */
+/* This will be overridden by more specific hero styles */
+.chat { /* Applied to all .chat, specific heroes will override background and alignment */
+    background-color: #f9f9f9; /* Default light background */
+}
+
+
+/* Speaker-specific styling */
+.chat.batman { /* As script.js adds class like "chat batman" */
+    background-color: #e1e1e1; /* Batman's grey */
+    color: #000; /* Black text for batman */
+    margin-left: auto; /* Align to the right */
+    margin-right: 10px; 
+    text-align: left; /* Text alignment within the box, typically left for readability */
+}
+
+.chat.superman { /* As script.js adds class like "chat superman" */
+    background-color: #d1eaff; /* Superman's blue */
+    color: #000; /* Black text for superman */
+    margin-left: 10px; /* Align to the left */
+    margin-right: auto;
+    text-align: left; /* Text alignment within the box */
+}
+
+/* Example for another hero - Wonder Woman */
+.chat.wonder-woman {
+    background-color: #fff0f5; /* Light pink/lavender for Wonder Woman */
+    color: #500050; /* Dark purple text */
+    margin-left: 10px; /* Assuming she's on the "left" side like Superman */
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Example for another hero - Hulk */
+.chat.hulk {
+    background-color: #e6ffe6; /* Light green for Hulk */
+    color: #003300; /* Dark green text */
+    margin-left: auto; /* Assuming he's on the "right" side like Batman */
+    margin-right: 10px;
+    text-align: left; 
+}
+
+/* Example for another hero - Spiderman */
+.chat.spiderman {
+    background-color: #ffe6e6; /* Light red for Spiderman */
+    color: #660000; /* Dark red text */
+    margin-left: 10px; /* Assuming he's on the "left" side */
+    margin-right: auto;
+    text-align: left;
+}
+
+
+/* Styles from the original file that might be for other parts of a larger app, kept for now */
+.talk-show { /* This seems like an old container, maybe not used by current index.html */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.character { /* Old styling, likely not used by new chat */
+    display: inline-block;
+    width: 48%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.host { /* Old styling */
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-input { /* Potentially for future input elements */
+    margin-top: 20px;
+    text-align: center; /* Center input elements */
+}
+
+input[type="text"] { /* Basic styling for text input */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 60%; /* Example width */
+    margin-right: 10px; /* Space between input and button */
+}
+
+button { /* Basic styling for button */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
